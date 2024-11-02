@@ -73,7 +73,7 @@ const MovingAddOne = () => {
 
   return (
     <div
-      className={`h-[81vh] transition-all flex gap-5 flex-col overflow-scroll no-scrollbar -z-50 p-4 pt-[135px]`}
+      className={`h-[85vh] transition-all flex gap-5 flex-col overflow-scroll no-scrollbar -z-50 p-4 pt-[135px]`}
       ref={containerRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

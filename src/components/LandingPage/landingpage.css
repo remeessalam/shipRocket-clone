@@ -1,4 +1,4 @@
-@keyframes slide {
+@keyframes slideImage {
   0% {
     transform: translateX(0%) skewX(5deg) scale(1.5);
   }
@@ -10,8 +10,8 @@
   }
 }
 
-.animate-slide {
-  animation: slide 20s linear infinite;
+.animate-slideImage {
+  animation: slideImage 20s linear infinite;
 }
 
 #gradient-canvas {

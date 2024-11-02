@@ -24,15 +24,19 @@ export default {
         120: "120%", // Custom size
         150: "150%", // Another custom size if needed
       },
+
       backgroundImage: {
         "landing-page": "url('/src/assets/images/download.png')",
         "footer-texture": "url('/img/footer-texture.png')",
         "gradient-circle":
           "linear-gradient(153deg, rgba(255,210,88,1) 0%, rgba(134,68,216,1) 62%, rgba(112,47,235,1) 98%)",
-        textColor:
+        "textmain-Color":
           "linear-gradient(99deg, #ffc465 0%, #5338ff 100%) 0% 0% no-repeat",
         "custom-gradient":
-          "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7861738445378151) 62%)",
+          "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9094231442577031) 62%, rgba(251,251,251,1) 98%)",
+        "border-gradient":
+          "linear-gradient(100deg, rgba(150,255,171,1) 8%, rgba(134,68,216,1) 69%, rgba(76,30,165,0.9906556372549019) 100%)",
+        // "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7861738445378151) 62%)",
       },
     },
   },

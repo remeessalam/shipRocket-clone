@@ -16,12 +16,19 @@ const navList = [
   "Quick",
 ];
 
+let tradeAchievement = [
+  { heading: " 2.5 Lakh+", paragraph: " merchants nationwide" },
+  { heading: "20 Crore", paragraph: "transactions every year" },
+  { heading: "30K Crore", paragraph: "annual GMV powered" },
+  { heading: "25 Crore", paragraph: "shipments delivered" },
+];
+
 const LandingPage = ({ isHeaderChange }) => {
   return (
     <div className="w-[100vw] justify-center overflow-hidden h-landingPageHeight">
       <div className="absolute top-0 -z-10 w-full h-full overflow-hidden">
         <img
-          className="absolute top-0 -z-10 w-full  h-full object-cover opacity-75 animate-slide"
+          className="absolute top-0 -z-10 w-full  h-full object-cover opacity-75 animate-slideImage"
           src={landing}
           alt="iamge"
         />
@@ -107,7 +114,7 @@ const LandingPage = ({ isHeaderChange }) => {
 
       <div
         style={{ transform: "rotate(-3deg)" }}
-        className="h-[140px] w-[105%] absolute bg-white  -bottom-3 -right-[5px]"
+        className="h-[140px] w-[105%] absolute bg-white  -bottom-11 -right-[5px]"
       ></div>
     </div>
   );
