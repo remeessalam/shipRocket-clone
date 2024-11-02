@@ -1,0 +1,54 @@
+@keyframes slide {
+  0% {
+    transform: translateX(0%) skewX(5deg) scale(1.5);
+  }
+  50% {
+    transform: translateX(50%) skewX(-2deg) scale(2.2);
+  }
+  100% {
+    transform: translateX(0%) skewX(5deg) scale(1.5);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+#gradient-canvas {
+  --gradient-color-1: #b5f6d4;
+  --gradient-color-2: #f5cbbe;
+  --gradient-color-3: #cda2fc;
+  --gradient-color-4: #fbf1f8;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 100%;
+  transform: skewY(-3deg);
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.headingText::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(80px);
+  left: -35%;
+  top: -25%;
+  background: transparent linear-gradient(99deg, #ffc465 0%, #5338ff 100%) 0% 0%
+    no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landingPageHeading {
+  background: transparent linear-gradient(99deg, #ffc465 0%, #5338ff 100%) 0% 0%
+    no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
