@@ -1,4 +1,4 @@
-import ImageCarousel from "../Carousel/Carousel";
+import ImageCarousel from "../../components/Carousel/Carousel";
 import deliveryTrack from "../../assets/images/deliveryTrack.webp";
 let tradeAchievement = [
   { heading: " 2.5 Lakh+", paragraph: " merchants nationwide" },

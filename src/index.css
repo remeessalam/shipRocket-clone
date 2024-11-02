@@ -14,3 +14,10 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.mainGradientHeading {
+  background: transparent linear-gradient(114deg, #ffd258, #8644d8 29%, #702feb)
+    60% 70% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

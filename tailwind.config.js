@@ -37,6 +37,7 @@ export default {
         "border-gradient":
           "linear-gradient(100deg, rgba(150,255,171,1) 8%, rgba(134,68,216,1) 69%, rgba(76,30,165,0.9906556372549019) 100%)",
         // "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7861738445378151) 62%)",
+        "cart-gradient": "linear-gradient(143deg, #f8feff, #e2f8ff)",
       },
     },
   },
@@ -44,7 +45,14 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         ".text-gradient": {
-          background: "linear-gradient(99deg, #ffc465, #5338ff)",
+          background:
+            "linear-gradient(114deg, #ffd258, #8644d8 69%, #702feb) 0 0",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+        },
+        ".text-greenGradient": {
+          background:
+            "linear-gradient(100deg, rgba(150,255,171,1) 23%, rgba(134,68,216,1) 69%, rgba(76,30,165,0.9906556372549019) 88%)",
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
         },

@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import Logo from "../../assets/Logo/shiprocket_logo.svg";
 import Button from "../Button/Button";
 
-const landingHeader = () => {
+const LandingHeader = ({ isHeaderChange }) => {
   const navList = [
     "Products",
     "Platfrom",
@@ -12,14 +13,18 @@ const landingHeader = () => {
     "Quick",
   ];
   return (
-    <div className="w-full  py-3 flex justify-center bg-blend-lighten z-10">
-      <div className="flex justify-between w-[90%] h-[60px] items-center">
+    <div
+      className={`w-full relative bg-custom-gradient h-[224px] top-0 items-start  py-3 flex justify-center z-50 ${
+        isHeaderChange ? `` : `hidden`
+      }`}
+    >
+      <div className="flex justify-between w-[1290px]  items-center">
         <div>
           <img className="w-[170px] h-[55px]" src={Logo} alt="Logo" />
         </div>
 
         <div>
-          <ul className="flex gap-9 items-center">
+          <ul className="flex gap-9 items-center z-50">
             {navList.map((list, i) => (
               <li
                 className={`${
@@ -44,5 +49,8 @@ const landingHeader = () => {
     </div>
   );
 };
+LandingHeader.propTypes = {
+  isHeaderChange: PropTypes.bool.isRequired,
+};
 
-export default landingHeader;
+export default LandingHeader;

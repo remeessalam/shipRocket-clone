@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import Header from "./components/Header/Header";
-import LandingPage from "./components/LandingPage/LandingPage";
-import SecondPage from "./components/SecondPage/SecondPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import SecondPage from "./pages/SecondPage/SecondPage";
 import OfferHeading from "./components/OfferHeading/OfferHeading";
+import ThirdPage from "./pages/ThirdPage/ThirdPage";
 
 function App() {
   const [showLandingHeader, setShowLandingHeader] = useState(true);
@@ -38,6 +39,8 @@ function App() {
       <LandingPage isHeaderChange={showLandingHeader} />
 
       <SecondPage />
+
+      <ThirdPage />
     </div>
   );
 }

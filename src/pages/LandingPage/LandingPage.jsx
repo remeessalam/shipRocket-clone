@@ -1,27 +1,10 @@
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import landing from "../../assets/images/download.png";
-import Logo from "../../assets/Logo/shiprocket_logo.svg";
 import "./landingpage.css";
 import MovingAddOne from "./Component/MovingAddOne";
 import MovingAddTwo from "./Component/MovingAddTwo";
-
-const navList = [
-  "Products",
-  "Platfrom",
-  "Pricing",
-  "Partners",
-  "Track Order",
-  "Resources",
-  "Quick",
-];
-
-let tradeAchievement = [
-  { heading: " 2.5 Lakh+", paragraph: " merchants nationwide" },
-  { heading: "20 Crore", paragraph: "transactions every year" },
-  { heading: "30K Crore", paragraph: "annual GMV powered" },
-  { heading: "25 Crore", paragraph: "shipments delivered" },
-];
+import LandingHeader from "../../components/LandingHeader/LandingHeader";
 
 const LandingPage = ({ isHeaderChange }) => {
   return (
@@ -35,41 +18,7 @@ const LandingPage = ({ isHeaderChange }) => {
       </div>
 
       {/** HEADER LANDING PAGE */}
-
-      <div
-        className={`w-full relative bg-custom-gradient h-[224px] top-0 items-start  py-3 flex justify-center z-50 ${
-          isHeaderChange ? `` : `hidden`
-        }`}
-      >
-        <div className="flex justify-between w-[1290px]  items-center">
-          <div>
-            <img className="w-[170px] h-[55px]" src={Logo} alt="Logo" />
-          </div>
-
-          <div>
-            <ul className="flex gap-9 items-center z-50">
-              {navList.map((list, i) => (
-                <li
-                  className={`${
-                    navList.length - 1 == i
-                      ? `text-[#735ae5] font-medium`
-                      : `text-[#6f6f6f] `
-                  }`}
-                  key={list}
-                >
-                  {list}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex gap-9">
-            <button>Log In</button>
-
-            <Button style={" px-[20px] py-[10px] "} text={"Tryfor Free"} />
-          </div>
-        </div>
-      </div>
+      <LandingHeader isHeaderChange={isHeaderChange} />
 
       {/** CONDENT LANDING PAGE */}
 
